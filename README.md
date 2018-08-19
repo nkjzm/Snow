@@ -1,7 +1,7 @@
 Snow
 ===
 
-## Lisence
+## License
 
 Released under the MIT license
 
