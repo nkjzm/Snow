@@ -584,7 +584,7 @@ MonoBehaviour:
   InitialShotMarker: {fileID: 581412223}
   BulletPrefab: {fileID: 114632761770416900, guid: e9cb4089b687f4c9c8842897c8ff1f31,
     type: 2}
-  ShotPower: 150
+  ShotPower: 300
   audioSource: {fileID: 2024580465}
 --- !u!82 &2024580465
 AudioSource:
@@ -729,7 +729,7 @@ MonoBehaviour:
   InitialShotMarker: {fileID: 431283809}
   BulletPrefab: {fileID: 114632761770416900, guid: e9cb4089b687f4c9c8842897c8ff1f31,
     type: 2}
-  ShotPower: 150
+  ShotPower: 300
   audioSource: {fileID: 2094979806}
 --- !u!82 &2094979806
 AudioSource:

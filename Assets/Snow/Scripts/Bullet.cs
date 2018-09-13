@@ -8,6 +8,19 @@ namespace Snow
     [RequireComponent(typeof(SphereCollider))]
     public class Bullet : MonoBehaviour
     {
+        [SerializeField]
+        float DestroySecond = 3f;
+        void Start()
+        {
+            StartCoroutine(AutoDestroy());
+        }
+
+        IEnumerator AutoDestroy()
+        {
+            yield return new WaitForSeconds(DestroySecond);
+            Destroy(gameObject);
+        }
+
         public void Shoot(Vector3 direct, float power = 100f)
         {
             GetComponent<Rigidbody>().AddForce(direct.normalized * power);
