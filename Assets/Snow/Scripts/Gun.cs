@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Snow
 {
+    [RequireComponent(typeof(AudioSource))]
     public class Gun : MonoBehaviour
     {
         [SerializeField]
@@ -12,6 +13,13 @@ namespace Snow
         Bullet BulletPrefab = null;
         [SerializeField]
         float ShotPower = 100f;
+        [SerializeField]
+        AudioSource audioSource = null;
+
+        void Reset()
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
         void Update()
         {
             // トリガー押されたら
@@ -33,6 +41,7 @@ namespace Snow
                 Quaternion.identity
             );
             bullet.Shoot(transform.forward, ShotPower);
+            audioSource.Play();
         }
     }
 }
