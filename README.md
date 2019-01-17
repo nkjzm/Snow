@@ -5,6 +5,8 @@ Snow
 
 Released under the MIT license
 
+Copyright (c) 2014-2016 Oculus VR, LLC. All rights reserved,
+
 ### Sound
 
 [魔王魂](https://maoudamashii.jokersounds.com/)
